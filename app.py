@@ -8,8 +8,8 @@ st.header('Flower Classification CNN Model')
 
 flower_names = ['daisy', 'dandelion', 'rose', 'sunflower', 'tulip']
 
-model = load_model('Flower_Recogniton_AI_Model.h5')
-img_size = 224  # Change to your model's expected input size
+model = load_model('Flower_Recog_Model.h5')
+img_size = 180  # Change to your model's expected input size
 
 def classify_images(image):
     input_image = image.resize((img_size, img_size))
